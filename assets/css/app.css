@@ -1,0 +1,105 @@
+/* ============================= */
+/* RESET BÁSICO */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* SECTIONS = SLIDES */
+/* ============================= */
+main {
+  width: 100%;
+}
+
+section {
+  min-height: 100vh;       /* Cada sección ocupa la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
+  padding: 2rem 1.5rem;
+}
+
+/* Diferenciar visualmente (solo demo) */
+.home { background: #f5f5f5; }
+.projects { background: #eaeaea; }
+.services { background: #dedede; }
+.contact { background: #d3d3d3; }
+.blog { background: #c8c8c8; }
+
+
+/* ============================= */
+/* HEADER + HAMBURGUESA */
+/* ============================= */
+.site-header {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.hamburger {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  font-size: 1.5rem;
+}
+
+/* ============================= */
+/* MENÚ MOBILE */
+/* ============================= */
+.nav_menu {
+  position: fixed;
+  bottom: 80px;
+  right: 1rem;
+  list-style: none;
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  display: none;
+}
+
+.nav_menu li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.nav_menu li:hover {
+  background: #222;
+}
+
+/* Activo */
+.nav_menu.active {
+  display: block;
+}
+
+
+/* ============================= */
+/* SWITCHERS FLOTANTES */
+/* ============================= */
+#gender-switcher,
+#lang-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  margin-bottom: 0.5rem;
+}
+
+#lang-switcher {
+  top: 3.5rem;
+}

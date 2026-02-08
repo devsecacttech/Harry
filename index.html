@@ -14,15 +14,16 @@
     <!-- ===== HEADER (partials/header.html) ===== -->
     <header class="site-header">
         <nav class="nav">
-            <!-- LOGO -->
-            <!-- <img src="/assets/img/logo.png" alt="Logo"> -->
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
 
-            <ul class="nav_menu">
-                <li data-i18n="menu.home"></li>
-                <li data-i18n="menu.projects"></li>
-                <li data-i18n="menu.services"></li>
-                <li data-i18n="menu.contact"></li>
-                <li data-i18n="menu.blog"></li>
+            <ul class="nav_menu" id="mobile-menu">
+                <li data-target="home" data-i18n="menu.home"></li>
+                <li data-target="projects" data-i18n="menu.projects"></li>
+                <li data-target="services" data-i18n="menu.services"></li>
+                <li data-target="contact" data-i18n="menu.contact"></li>
+                <li data-target="blog" data-i18n="menu.blog"></li>
             </ul>
 
             <select id="gender-switcher">
