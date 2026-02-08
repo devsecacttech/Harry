@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <!-- ===== HEAD (partials/head.html) ===== -->
+    <title data-i18n="site.title"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- ===== FIN HEAD ===== -->
+</head>
+
+<body>
+    <!-- ===== HEADER (partials/header.html) ===== -->
+    <header class="site-header">
+        <nav class="nav">
+            <!-- LOGO -->
+            <!-- <img src="/assets/img/logo.png" alt="Logo"> -->
+
+            <ul class="nav_menu">
+                <li data-i18n="menu.home"></li>
+                <li data-i18n="menu.projects"></li>
+                <li data-i18n="menu.services"></li>
+                <li data-i18n="menu.contact"></li>
+                <li data-i18n="menu.blog"></li>
+            </ul>
+
+            <select id="gender-switcher">
+                <option value="male" selected data-i18n="site.gender.male"></option>
+                <option value="female" data-i18n="site.gender.female"></option>
+            </select>
+            <select id="lang-switcher">
+                <option value="es" selected data-i18n="site.language.es"></option>
+                <option value="en" data-i18n="site.language.en"></option>
+            </select>
+        </nav>
+    </header>
+    <!-- ===== FIN HEADER ===== -->
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- home SECTION -->
+        <section class="home">
+            <h1 data-i18n="home.title"></h1>
+            <p data-i18n="home.subtitle"></p>
+        </section>
+        <!-- projects SECTION -->
+        <section class="projects">
+            <h1 data-i18n="projects.title"></h1>
+            <p data-i18n="projects.subtitle"></p>
+        </section>
+        <!-- services SECTION -->
+        <section class="services">
+            <h1 data-i18n="services.title"></h1>
+            <p data-i18n="services.subtitle"></p>
+        </section>
+        <!-- contact SECTION -->
+        <section class="contact">
+            <h1 data-i18n="contact.title"></h1>
+            <p data-i18n="contact.subtitle"></p>
+        </section>
+        <!-- blog SECTION -->
+        <section class="blog">
+            <h1 data-i18n="blog.title"></h1>
+            <p data-i18n="blog.subtitle"></p>
+        </section>
+    </main>
+    <!-- ===== FIN MAIN ===== -->
+
+    <!-- ===== FOOTER (partials/footer.html) ===== -->
+    <footer class="site-footer">
+        <p data-i18n="site.footer"></p>
+    </footer>
+    <!-- ===== FIN FOOTER ===== -->
+
+    <!-- JS -->
+    <script type="module" src="/assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+    "site.title": "Harry Izquierdo",
+    "site.gender.male": "Masculino",
+    "site.gender.female": "Femenino",
+    "site.language.es": "Español",
+    "site.language.en": "Inglés",
+    "menu.home": "Inicio",
+    "menu.projects": "Proyectos",
+    "menu.services": "Servicios",
+    "menu.contact": "Contacto",
+    "menu.blog": "Artículos",
+    "site.footer": "Harry Izquierdo - Todos los derechos reservados © 2026",
+    "home.title": "Soluciones tecnológicas",
+    "home.subtitle": "Desarrollo a medida",
+    "projects.title": "Proyects destacados",
+    "projects.subtitle": "Algunos de mis proyectos más recientes",
+    "services.title": "Servicios ofrecidos",
+    "services.subtitle": "Descubre los servicios que ofrezco",
+    "contact.title": "Contáctame",
+    "contact.subtitle": "Ponte en contacto conmigo para cualquier consulta o proyecto",
+    "blog.title": "Últimos artículos",
+    "blog.subtitle": "Lista de mis últimos artículos"
+}
