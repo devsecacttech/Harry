@@ -1,0 +1,11 @@
+.site-header {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: var(--z-hamburger);
+}
+
+/* OCULTAMOS menú normal */
+.nav_menu {
+  display: none;
+}

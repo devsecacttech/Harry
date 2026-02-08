@@ -1,0 +1,24 @@
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5rem;
+}
+
+/* Solo para distinguir visualmente (temporal) */
+.home { background: #020617; color: white; }
+.projects { background: #020617; color: white; }
+.services { background: #020617; color: white; }
+.contact { background: #020617; color: white; }
+.blog { background: #020617; color: white; }

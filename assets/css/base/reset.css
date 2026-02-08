@@ -1,0 +1,68 @@
+/* Box model consistente */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remueve márgenes por defecto */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Altura base */
+html {
+  height: 100%;
+}
+
+/* Body base */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Listas limpias */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Links sin estilos agresivos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imágenes responsivas */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Formularios consistentes */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Scroll suave (anclas tipo slider) */
+html:focus-within {
+  scroll-behavior: smooth;
+}

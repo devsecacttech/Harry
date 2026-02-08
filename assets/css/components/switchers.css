@@ -1,0 +1,14 @@
+#lang-switcher,
+#gender-switcher {
+  position: fixed;
+  top: 1rem;
+  z-index: var(--z-switchers);
+}
+
+#lang-switcher {
+  right: 1rem;
+}
+
+#gender-switcher {
+  right: 5rem;
+}

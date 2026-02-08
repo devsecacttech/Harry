@@ -1,0 +1,17 @@
+:root {
+  /* Colores */
+  --color-bg: #020617;
+  --color-text: #e5e7eb;
+  --color-accent: #38bdf8;
+  --bg-dark: #0f172a;
+  --bg-light: #ffffff;
+  --text-light: #ffffff;
+
+  /* Layout */
+  --header-height: 56px;
+
+  /* Z-index */
+  --z-header: 1000;
+  --z-hamburger: 1100;
+  --z-switchers: 900;
+}
