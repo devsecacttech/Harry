@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Selector de Idioma</title>
+
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  background-color: black;
+}
+
+/* ===== Selector ===== */
+.lang-selector {
+  position: relative;
+  width: 160px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lang-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.chevron {
+  width: 16px;
+  transition: .2s;
+}
+
+.lang-menu {
+  list-style: none;
+  padding: 6px;
+  margin: 8px 0 0 0;
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  position: absolute;
+  width: 90%;
+  display: none;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  background: #f0f3f8;
+}
+
+.lang-selector.open .lang-menu {
+  display: block;
+}
+
+.lang-selector.open .chevron {
+  transform: rotate(180deg);
+}
+</style>
+</head>
+
+<body>
+
+<div class="lang-selector" id="selector">
+
+  <div class="lang-btn" id="btn">
+    <div class="lang-left" id="currentLang">
+      <!-- icono inicial -->
+      <svg class="lang-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#3b82f6"/>
+      </svg>
+      <span>Español</span>
+    </div>
+
+    <svg class="chevron" viewBox="0 0 20 20">
+      <path d="M5 7l5 5 5-5Z" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <ul class="lang-menu">
+
+    <li class="lang-option" data-lang="Español">
+      <svg class="lang-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#3b82f6"/>
+      </svg>
+      Español
+    </li>
+
+    <li class="lang-option" data-lang="English">
+      <svg class="lang-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#ef4444"/>
+      </svg>
+      English
+    </li>
+
+    <li class="lang-option" data-lang="Français">
+      <svg class="lang-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#22c55e"/>
+      </svg>
+      Français
+    </li>
+
+    <li class="lang-option" data-lang="Deutsch">
+      <svg class="lang-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#f59e0b"/>
+      </svg>
+      Deutsch
+    </li>
+
+  </ul>
+</div>
+
+<script>
+const selector = document.getElementById("selector");
+const btn = document.getElementById("btn");
+const current = document.getElementById("currentLang");
+const options = document.querySelectorAll(".lang-option");
+
+/* abrir / cerrar */
+btn.onclick = () => selector.classList.toggle("open");
+
+/* seleccionar idioma */
+options.forEach(opt => {
+  opt.onclick = () => {
+    const icon = opt.querySelector("svg").outerHTML;
+    const text = opt.dataset.lang;
+
+    current.innerHTML = icon + "<span>" + text + "</span>";
+    selector.classList.remove("open");
+  };
+});
+
+/* cerrar si clic fuera */
+document.addEventListener("click", e => {
+  if (!selector.contains(e.target)) {
+    selector.classList.remove("open");
+  }
+});
+</script>
+
+</body>
+</html>
